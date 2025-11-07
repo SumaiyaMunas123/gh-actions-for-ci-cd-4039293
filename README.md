@@ -1,5 +1,5 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# GitHub Actions for CI/CD: Build, Test, and Deploy
+This is the repository for the LinkedIn Learning course `GitHub Actions for CI/CD: Build, Test, and Deploy`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![lil-thumbnail-url]
 
