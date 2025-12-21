@@ -1,4 +1,12 @@
-# 0_02 Explore the Capabilities of Github actions
+# 00_02 Explore the Capabilities of Github actions
+
+## An Overview of CI/CD
+
+| Stage | Description | Automation Focus | Primary Goal |
+| ----- | ----------- | ---------------- | ------------ |
+| **Continuous Integration (CI)** | Developers frequently commit code to a shared repository. New changes are merged with existing code and automatically checked using linting and unit tests. | Code validation and fast feedback | Catch errors early and keep the codebase stable |
+| **Continuous Delivery (CD)** | After successful integration, the build process is automated. Additional, higher-level tests run and the application is packaged for release. | Build, test, and package automation | Always have software that is ready to deploy |
+| **Continuous Deployment (CD)**  | Every change that passes validation is automatically deployed to production with no manual intervention. | End-to-end pipeline automation | Release software quickly and reliably |
 
 ## Terminology
 
@@ -16,11 +24,11 @@
 | Resource | Description |
 |----------|-------------|
 | [Learning GitHub Actions: Event-Driven Automation for Your Codebase](https://www.linkedin.com/learning/learning-github-actions-event-driven-automation-for-your-codebase/) | Comprehensive LinkedIn Learning course covering event-driven automation fundamentals and practical GitHub Actions implementation |
+| [What is CI/CD?](./CI_CD.md) | Another brief overview of CI/CD |
 | [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart) | Official GitHub documentation providing a fast-track introduction to creating and running your first GitHub Actions workflow |
 | [Using workflows](https://docs.github.com/en/actions/using-workflows) | In-depth official guide to understanding workflow syntax, configuration, and best practices for GitHub Actions |
 | [GitHub Marketplace: Actions](https://github.com/marketplace?type=actions) | Curated marketplace of pre-built actions created by GitHub and the community to extend your workflow capabilities |
 | [GitHub Actions Runner Images](https://github.com/actions/runner-images/tree/main) | Repository containing configuration details and available software for GitHub-hosted runner environments |
-
 
 ## Review a GitHub Actions Workflow
 
@@ -59,5 +67,5 @@ You can also [follow this link to view the workflow file](./github-actions-workf
 
 <!-- FooterStart -->
 ---
-[← 0_01 Jumpstart Your CI/CD with Github actions](../00_01_jumpstart_your_cicd_with_github_actions/README.md) | [01_01 Leverage Starter Workflows to Build Your First CI/CD Pipeline →](../../ch1_continous_integration_workflows/01_01_leverage_starter_workflows_to_build_your_first_cicd_pipeline/README.md)
+[← 00_01 Jumpstart Your CI/CD with Github actions](../00_01_jumpstart_your_cicd_with_github_actions/README.md) | [01_01 Leverage Starter Workflows →](../../ch1_continous_integration_workflows/01_01_leverage_starter_workflows_to_build_your_first_cicd_pipeline/README.md)
 <!-- FooterEnd -->

@@ -43,5 +43,5 @@ The goal of this course is to explore the different features of GitHub Actions f
 
 <!-- FooterStart -->
 ---
-[0_01 Jumpstart Your CI/CD with Github actions →](ch0_introduction/00_01_jumpstart_your_cicd_with_github_actions/README.md)
+[00_01 Jumpstart Your CI/CD with Github actions →](ch0_introduction/00_01_jumpstart_your_cicd_with_github_actions/README.md)
 <!-- FooterEnd -->
