@@ -4,11 +4,11 @@ Use these steps to create a GitHub organization so you can keep all of your cour
 
 ## Overview
 
-If you follow along with the content of this course, you'll be creating many of repositories on GitHub.
+If you follow along with the content of this course, you'll be creating lots of repositories on GitHub.
 
 A new repo is required for many of the lessons because:
 
-- the code bases are different
+- most lessons use their own codebase which varies from other lessons
 - the lessons assume you are starting from a new repo
 
 Keeping all course-related repos in an organization helps to keep things...organized! In addition, it also prevents course-related repos from getting mixed in with personal repos.
