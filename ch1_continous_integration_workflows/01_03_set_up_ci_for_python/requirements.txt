@@ -1,4 +1,6 @@
-fastapi==0.92.0
-uvicorn==0.20.0
-httpx
-pytest
+# Production dependencies
+fastapi
+uvicorn
+python-dotenv
+pydantic
+pydantic-settings
