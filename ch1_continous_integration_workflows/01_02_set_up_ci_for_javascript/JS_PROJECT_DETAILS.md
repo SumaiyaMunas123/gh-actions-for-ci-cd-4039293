@@ -71,9 +71,9 @@ The server will start on the configured port (default: 3000).
 
 ### Health Check
 
-**GET** `/health`
-
-Returns the health status of the service.
+|Route|Description|Status Code|
+|-----|-----------|-----------|
+|**GET** `/health`|Returns the health status of the service.|`200 OK`|
 
 **Response:**
 ```json
@@ -83,13 +83,11 @@ Returns the health status of the service.
 }
 ```
 
-**Status Code:** `200 OK`
-
 ### Get All Data
 
-**GET** `/`
-
-Returns all school/university data.
+|Route|Description|Status Code|
+|-----|-----------|-----------|
+|**GET** `/`|Returns all school/university data.|`200 OK`|
 
 **Response:**
 
@@ -109,13 +107,11 @@ Returns all school/university data.
 ]
 ```
 
-**Status Code:** `200 OK`
-
 ### Get Item by GUID
 
-**GET** `/:guid`
-
-Returns a single school/university item by GUID.
+|Route|Description|Status Code|
+|-----|-----------|-----------|
+|**GET** `/:guid`|Returns a single school/university item by GUID. Parameters: `guid` (path parameter) - Valid UUID v4 format GUID|`200 OK`, `404 Not Found`, `400 Bad Request`|
 
 **Parameters:**
 
@@ -136,8 +132,6 @@ Returns a single school/university item by GUID.
 }
 ```
 
-**Status Code:** `200 OK`
-
 **Response (Not Found):**
 
 ```json
@@ -150,8 +144,6 @@ Returns a single school/university item by GUID.
 }
 ```
 
-**Status Code:** `404 Not Found`
-
 **Response (Invalid GUID Format):**
 
 ```json
@@ -163,8 +155,6 @@ Returns a single school/university item by GUID.
   }
 }
 ```
-
-**Status Code:** `400 Bad Request`
 
 ## Error Responses
 

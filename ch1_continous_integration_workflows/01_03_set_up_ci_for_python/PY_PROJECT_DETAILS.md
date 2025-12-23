@@ -38,22 +38,6 @@ pip install --requirement development-requirements.txt
 pip install --requirement requirements.txt
 ```
 
-2. Copy the example environment file (if available):
-
-```bash
-cp .env.example .env
-```
-
-3. (Optional) Edit `.env` to customize configuration:
-
-```bash
-HOST=0.0.0.0
-PORT=3000
-DATA_FILE_PATH=data.json
-API_TITLE=Python API Microservice
-API_VERSION=1.0.0
-```
-
 ## Configuration
 
 The application can be configured using environment variables:
@@ -94,9 +78,9 @@ The server will start on the configured port (default: 3000).
 
 ### Health Check
 
-**GET** `/health`
-
-Returns the health status of the service.
+|Route|Description|Status Code|
+|-----|-----------|-----------|
+|**GET** `/health`|Returns the health status of the service.|`200 OK`|
 
 **Response (Healthy):**
 ```json
@@ -114,13 +98,11 @@ Returns the health status of the service.
 }
 ```
 
-**Status Code:** `200 OK`
-
 ### Get All Data
 
-**GET** `/`
-
-Returns all school/university data.
+|Route|Description|Status Code|
+|-----|-----------|-----------|
+|**GET** `/`|Returns all school/university data.|`200 OK`|
 
 **Response:**
 
@@ -140,13 +122,11 @@ Returns all school/university data.
 ]
 ```
 
-**Status Code:** `200 OK`
-
 ### Get Item by GUID
 
-**GET** `/{guid}`
-
-Returns a single school/university item by GUID.
+|Route|Description|Status Code|
+|-----|-----------|-----------|
+|**GET** `/{guid}`|Returns a single school/university item by GUID. Parameters: `guid` (path parameter) - GUID string identifier|`200 OK`, `404 Not Found`, `400 Bad Request`, `500 Internal Server Error`|
 
 **Parameters:**
 
@@ -167,8 +147,6 @@ Returns a single school/university item by GUID.
 }
 ```
 
-**Status Code:** `200 OK`
-
 **Response (Not Found):**
 
 ```json
@@ -176,8 +154,6 @@ Returns a single school/university item by GUID.
   "detail": "Item with GUID '00000000-0000-0000-0000-000000000000' not found"
 }
 ```
-
-**Status Code:** `404 Not Found`
 
 **Response (Invalid GUID Format):**
 
@@ -187,8 +163,6 @@ Returns a single school/university item by GUID.
 }
 ```
 
-**Status Code:** `400 Bad Request`
-
 **Response (Data Load Error):**
 
 ```json
@@ -196,8 +170,6 @@ Returns a single school/university item by GUID.
   "detail": "Failed to load data: Data file not found: /nonexistent/file.json"
 }
 ```
-
-**Status Code:** `500 Internal Server Error`
 
 ## Error Responses
 
