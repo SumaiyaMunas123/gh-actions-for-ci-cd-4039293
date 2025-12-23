@@ -1,5 +1,7 @@
 # 01_02 Set Up CI for Javascript
 
+TODO: Add link to project file
+TODO: Add liknk to completed workflow file
 
 <!-- FooterStart -->
 ---
