@@ -1,7 +1,7 @@
 # 01_03 Set Up CI for Python
 
 TODO: Add link to project file
-TODO: Add liknk to completed workflow file
+TODO: Add link to completed workflow file
 
 <!-- FooterStart -->
 ---
