@@ -1,0 +1,32 @@
+# Test files and outputs
+*.test.js
+*_test.js
+main_test.js
+junit.xml
+coverage/
+.nyc_output
+
+# Development files
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Documentation (optional - remove if you want docs in package)
+JS_PROJECT_DETAILS.md
+
+# Git files
+.git/
+.gitignore
+
+# CI/CD files (if any)
+.github/

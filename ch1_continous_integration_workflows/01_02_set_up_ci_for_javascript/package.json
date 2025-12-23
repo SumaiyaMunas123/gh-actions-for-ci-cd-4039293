@@ -8,6 +8,7 @@
     "scripts": {
         "start": "node main.js",
         "dev": "nodemon main.js",
+        "build": "npm pack",
         "lint": "eslint . || echo 'For corrections run: npm run lint -- --fix'",
         "test": "mocha main_test.js --reporter mocha-junit-reporter --reporter-options mochaFile=./junit.xml",
         "test:watch": "mocha main_test.js --watch"
