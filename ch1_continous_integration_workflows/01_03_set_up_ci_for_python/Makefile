@@ -8,14 +8,9 @@ RUN  = uvicorn main:app --host 0.0.0.0 --port $(PORT) --reload
 
 all: setup fmt lint test
 
-setup: development
+setup:
 	pip install --requirement requirements.txt
 	@echo "$(NAME) Application Setup complete"
-
-development:
-	pip install --upgrade pip
-	pip install --requirement development-requirements.txt
-	@echo "$(NAME) Development Setup complete"
 
 fmt:
 	$(FMT)

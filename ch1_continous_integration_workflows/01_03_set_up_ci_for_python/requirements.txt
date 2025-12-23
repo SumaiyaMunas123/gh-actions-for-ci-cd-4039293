@@ -4,3 +4,10 @@ uvicorn
 python-dotenv
 pydantic
 pydantic-settings
+
+# Development dependencies
+black
+flake8
+httpx
+pytest
+pytest-asyncio

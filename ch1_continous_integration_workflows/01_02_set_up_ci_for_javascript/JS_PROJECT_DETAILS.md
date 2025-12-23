@@ -27,13 +27,13 @@ A modern JavaScript/Node.js microservice API that provides access to university 
 npm install
 ```
 
-2. Copy the example environment file:
+1. Copy the example environment file:
 
 ```bash
 cp .env.example .env
 ```
 
-3. (Optional) Edit `.env` to customize configuration:
+1. (Optional) Edit `.env` to customize configuration:
 
 ```bash
 PORT=3000
@@ -76,6 +76,7 @@ The server will start on the configured port (default: 3000).
 |**GET** `/health`|Returns the health status of the service.|`200 OK`|
 
 **Response:**
+
 ```json
 {
   "status": "ok",

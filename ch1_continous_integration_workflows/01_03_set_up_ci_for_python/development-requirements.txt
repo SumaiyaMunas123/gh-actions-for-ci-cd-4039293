@@ -1,6 +1,0 @@
-# Development dependencies
-black
-flake8
-httpx
-pytest
-pytest-asyncio
