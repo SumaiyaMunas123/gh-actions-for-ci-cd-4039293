@@ -1,25 +1,3 @@
-.DS_Store
-node_modules
-.tmp
-npm-debug.log
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Test outputs
-junit.xml
-coverage/
-*.log
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
 # Logs
 logs
 *.log
