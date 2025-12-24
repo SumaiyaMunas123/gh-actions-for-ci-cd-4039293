@@ -73,6 +73,9 @@ clean:
 	find . -type f -name \*.bak -exec rm -vf {} \;
 	find . -type f -name \*.new -exec rm -vf {} \;
 	find . -type d -name .pytest_cache -exec trash {} \;
+	$(MAKE) clean -C ./ch1_continous_integration_workflows/01_02_set_up_ci_for_javascript/
+	$(MAKE) clean -C./ch1_continous_integration_workflows/01_03_set_up_ci_for_python/
+	$(MAKE) clean -C./ch1_continous_integration_workflows/01_04_set_up_ci_for_go/
 
 nuke: clean
 	find /tmp/ -type f -name \*.pdf -exec rm -vf {} \;

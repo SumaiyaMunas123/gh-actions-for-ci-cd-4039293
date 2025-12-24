@@ -17,53 +17,66 @@ GOVET := $(GOCMD) vet
 LDFLAGS := -s -w
 BUILD_FLAGS := -ldflags "$(LDFLAGS)"
 
+# Colors for output
+GREEN = \033[0;32m
+YELLOW = \033[0;33m
+NC = \033[0m # No Color
+
 help: ## Show this help message
-	@echo 'Usage: make [target]'
+	@echo "$(GREEN)Usage: make [target]$(NC)"
 	@echo ''
-	@echo 'Available targets:'
+	@echo "$(GREEN)Available targets:$(NC)"
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 deps: ## Download dependencies
-	$(GOMOD) download
-	$(GOMOD) tidy
+	@echo "$(GREEN)Downloading dependencies...$(NC)"
+	@$(GOMOD) download
+	@$(GOMOD) tidy
+	@echo "$(GREEN)Dependencies installed$(NC)"
 
 build: ## Build the application
-	@echo "Building $(BINARY_NAME)..."
+	@echo "$(GREEN)Building $(BINARY_NAME)...$(NC)"
 	@mkdir -p $(BUILD_DIR)
-	$(GOBUILD) $(BUILD_FLAGS) -o $(BUILD_DIR)/$(BINARY_NAME) ./cmd/server
-	@echo "Build complete: $(BUILD_DIR)/$(BINARY_NAME)"
+	@$(GOBUILD) $(BUILD_FLAGS) -o $(BUILD_DIR)/$(BINARY_NAME) ./cmd/server
+	@echo "$(GREEN)Build complete: $(BUILD_DIR)/$(BINARY_NAME)$(NC)"
 
 run: ## Run the application
 	$(GOCMD) run ./cmd/server
 
 test: ## Run tests
-	$(GOTEST) -v ./...
+	@echo "$(GREEN)Running tests...$(NC)"
+	@$(GOTEST) -v ./...
 
 test-verbose: ## Run tests with verbose output
-	$(GOTEST) -v -race ./...
+	@echo "$(GREEN)Running tests with verbose output...$(NC)"
+	@$(GOTEST) -v -race ./...
 
 test-coverage: ## Run tests with coverage report
-	$(GOTEST) -v -coverprofile=coverage.out ./...
-	$(GOCMD) tool cover -html=coverage.out -o coverage.html
-	@echo "Coverage report generated: coverage.html"
+	@echo "$(GREEN)Running tests with coverage...$(NC)"
+	@$(GOTEST) -v -coverprofile=coverage.out ./...
+	@$(GOCMD) tool cover -html=coverage.out -o coverage.html
+	@echo "$(GREEN)Coverage report generated: coverage.html$(NC)"
 
 lint: ## Run linters (requires golangci-lint)
+	@echo "$(GREEN)Running linter...$(NC)"
 	@if command -v golangci-lint > /dev/null; then \
 		golangci-lint run; \
 	else \
-		echo "golangci-lint not found. Running go vet instead..."; \
+		echo "$(YELLOW)golangci-lint not found. Running go vet instead...$(NC)"; \
 		$(GOVET) ./...; \
 	fi
 
 fmt: ## Format code
-	$(GOFMT) ./...
-	@echo "Code formatted"
+	@echo "$(GREEN)Formatting code...$(NC)"
+	@$(GOFMT) ./...
+	@echo "$(GREEN)Code formatted$(NC)"
 
 vet: ## Run go vet
-	$(GOVET) ./...
+	@echo "$(GREEN)Running go vet...$(NC)"
+	@$(GOVET) ./...
 
 clean: ## Clean build artifacts
-	@echo "Cleaning..."
-	rm -rf $(BUILD_DIR)
-	rm -f coverage.out coverage.html
-	@echo "Clean complete"
+	@echo "$(YELLOW)Cleaning build artifacts...$(NC)"
+	@rm -rvf $(BUILD_DIR)
+	@rm -vf coverage.out coverage.html server
+	@echo "$(GREEN)Clean complete$(NC)"

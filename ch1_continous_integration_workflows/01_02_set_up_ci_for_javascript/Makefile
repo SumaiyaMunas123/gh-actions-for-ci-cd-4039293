@@ -71,10 +71,11 @@ dev:
 # Clean generated files
 clean:
 	@echo "$(YELLOW)Cleaning generated files...$(NC)"
-	@rm -f junit.xml
-	@rm -rf node_modules
-	@rm -rf coverage
-	@rm -f *.log
+	@rm -vf junit.xml
+	@rm -rvf node_modules
+	@rm -rvf coverage
+	@rm -vf *.log
+	@rm -vf *.tgz
 	@echo "$(GREEN)Clean complete$(NC)"
 
 # Run setup, lint, and test

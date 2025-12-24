@@ -52,10 +52,19 @@ Keeping all course-related repos in an organization helps to keep things...organ
 
 Once verification is complete, your organization is created and you’ll land on the organization’s home page.
 
-## Create your first repository in the organization
+## Creating a repository in the organization
+
+### Create from the organization home page
 
 1. From the organization home page, select the **Repositories** tab.
 2. Select **New repository** to start creating the repos you’ll use for the course.
+3. Complete the remaining steps to create the repo.
+
+### Create from github.com/new
+
+1. Browse to GitHub's [create a new repository page, github.com/new](https://github.com/new).
+2. Use the **Owner** drop down to select the organization name.
+3. Complete the remaining steps to create the repo.
 
 <!-- FooterStart -->
 ---
