@@ -23,8 +23,10 @@
 
 ## References
 
-- [Working with a GitHub Packages registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry)
-- [About permissions for GitHub Packages](https://docs.github.com/en/packages/learn-github-packages/about-permissions-for-github-packages#about-scopes-and-permissions-for-package-registries)
+| Reference | Description |
+|----------|-------------|
+| [Working with a GitHub Packages registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry) | Official GitHub documentation for working with GitHub Packages |
+| [About permissions for GitHub Packages](https://docs.github.com/en/packages/learn-github-packages/about-permissions-for-github-packages#about-scopes-and-permissions-for-package-registries) | GitHub documentation explaining permissions and scopes for GitHub Packages |
 
 <!-- FooterStart -->
 ---

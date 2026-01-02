@@ -19,9 +19,9 @@
 | **Steps**|The actual work done by a job takes place in Steps.  Steps are simple commands, shell scripts, or they can be Actions.|
 |**Actions**|Actions help speed up your workflow development by bundling programs, runtimes, and all of their dependencies into Docker containers or JavaScript modules.|
 
-## References and Resources
+## References
 
-| Resource | Description |
+| Reference | Description |
 |----------|-------------|
 | [Learning GitHub Actions: Event-Driven Automation for Your Codebase](https://www.linkedin.com/learning/learning-github-actions-event-driven-automation-for-your-codebase/) | Comprehensive LinkedIn Learning course covering event-driven automation fundamentals and practical GitHub Actions implementation |
 | [What is CI/CD?](./CI_CD.md) | Another brief overview of CI/CD |

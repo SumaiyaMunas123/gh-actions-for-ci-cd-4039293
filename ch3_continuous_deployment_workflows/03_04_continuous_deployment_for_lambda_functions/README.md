@@ -37,7 +37,9 @@ flowchart LR
 
 ## References
 
-- [Lambda Project Details](./LAMBDA_PROJECT_DETAILS.md)
+| Reference | Description |
+|----------|-------------|
+| [Lambda Project Details](./LAMBDA_PROJECT_DETAILS.md) | Documentation for the Lambda project used in this lesson |
 
 ## Lab: Continuous Deployment to AWS Lambda with GitHub Actions
 

@@ -30,8 +30,8 @@ Following are some key points to keep in mind when building deployment pipelines
 
 ## References
 
-| Link | Description |
-|------|--------------|
+| Reference | Description |
+|----------|-------------|
 | [Deploying with GitHub Actions](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments) | Explains how to configure and manage deployment workflows in GitHub Actions, including controlling deployment targets and approvals. |
 | [Managing environments for deployment](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments) | Describes how to create, configure, and protect environments used for deployments in GitHub Actions. |
 | [Viewing deployment history](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/view-deployment-history) | Shows how to review past deployments, track status, and view history logs for workflows. |

@@ -6,11 +6,13 @@ But you can tune up the suggested workflow by customizing setup steps and adding
 
 ## References
 
-- [actions/setup-go on GitHub Marketplace](https://github.com/marketplace/actions/setup-go-environment)
-- [Revive linter for Go on GitHub Marketplace](https://github.com/marketplace/actions/revive-action)
-- [actions/checkout on GitHub Marketplace](https://github.com/marketplace/actions/checkout)
-- [Documentation for the Go project used for this lesson](./GO_PROJECT_DETAILS.md)
-- [The updated workflow for this lesson](./go-ci-workflow.yml)
+| Reference | Description |
+|----------|-------------|
+| [actions/setup-go on GitHub Marketplace](https://github.com/marketplace/actions/setup-go-environment) | GitHub Action for setting up Go environments |
+| [Revive linter for Go on GitHub Marketplace](https://github.com/marketplace/actions/revive-action) | GitHub Action for running the Revive linter for Go code |
+| [actions/checkout on GitHub Marketplace](https://github.com/marketplace/actions/checkout) | GitHub Action for checking out repository code |
+| [Documentation for the Go project used for this lesson](./GO_PROJECT_DETAILS.md) | Documentation for the Go project used in this lesson |
+| [The updated workflow for this lesson](./go-ci-workflow.yml) | The complete workflow file for this lesson |
 
 ## Lab: Using a Go Starter Workflow with GitHub Actions
 

@@ -54,12 +54,14 @@ To ensure delivery steps only run after integration completes successfully, defi
 
 ## References
 
-- [docker/setup-buildx-action on GitHub Marketplace](https://github.com/marketplace/actions/docker-setup-buildx)
-- [sigstore/cosign-installer on GitHub Marketplace](https://github.com/marketplace/actions/cosign-installer)
-- [docker/login-action on GitHub Marketplace](https://github.com/marketplace/actions/docker-login)
-- [docker/metadata-action on GitHub Marketplace](https://github.com/marketplace/actions/docker-metadata-action)
-- [docker/build-push-action on GitHub Marketplace](https://github.com/marketplace/actions/build-and-push-docker-images)
-- [actions/checkout on GitHub Marketplace](https://github.com/marketplace/actions/checkout)
+| Reference | Description |
+|----------|-------------|
+| [docker/setup-buildx-action on GitHub Marketplace](https://github.com/marketplace/actions/docker-setup-buildx) | GitHub Action for setting up Docker Buildx |
+| [sigstore/cosign-installer on GitHub Marketplace](https://github.com/marketplace/actions/cosign-installer) | GitHub Action for installing Cosign for container signing |
+| [docker/login-action on GitHub Marketplace](https://github.com/marketplace/actions/docker-login) | GitHub Action for authenticating with Docker registries |
+| [docker/metadata-action on GitHub Marketplace](https://github.com/marketplace/actions/docker-metadata-action) | GitHub Action for generating Docker image metadata |
+| [docker/build-push-action on GitHub Marketplace](https://github.com/marketplace/actions/build-and-push-docker-images) | GitHub Action for building and pushing Docker images |
+| [actions/checkout on GitHub Marketplace](https://github.com/marketplace/actions/checkout) | GitHub Action for checking out repository code |
 
 ## Lab: Create a Continuous Delivery Workflow for a Container Image
 

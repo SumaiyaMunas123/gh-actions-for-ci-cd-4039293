@@ -14,11 +14,13 @@ To do this, you’ll use the **JUnit Report** action from the GitHub Actions Mar
 
 ## References
 
-- [actions/setup-python on GitHub Marketplace](https://github.com/marketplace/actions/setup-python)
-- [mikepenz/action-junit-report on GitHub Marketplace](https://github.com/marketplace/actions/junit-report-action)
-- [actions/checkout on GitHub Marketplace](https://github.com/marketplace/actions/checkout)
-- [Documentation for the Python project used for this lesson](./PY_PROJECT_DETAILS.md)
-- [The updated workflow for this lesson](./py-ci-workflow.yml)
+| Reference | Description |
+|----------|-------------|
+| [actions/setup-python on GitHub Marketplace](https://github.com/marketplace/actions/setup-python) | GitHub Action for setting up Python environments |
+| [mikepenz/action-junit-report on GitHub Marketplace](https://github.com/marketplace/actions/junit-report-action) | GitHub Action for publishing JUnit test reports |
+| [actions/checkout on GitHub Marketplace](https://github.com/marketplace/actions/checkout) | GitHub Action for checking out repository code |
+| [Documentation for the Python project used for this lesson](./PY_PROJECT_DETAILS.md) | Documentation for the Python project used in this lesson |
+| [The updated workflow for this lesson](./py-ci-workflow.yml) | The complete workflow file for this lesson |
 
 ## Lab: Publish Test Results in GitHub Actions
 

@@ -54,22 +54,16 @@ echo "### Summary Title" >> $GITHUB_STEP_SUMMARY
 
 ## References
 
-- [LinkedIn Learning Course: Learning Terraform](https://www.linkedin.com/learning/learning-terraform-15575129/learn-terraform-for-your-cloud-infrastructure)
-- [About protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
+| Reference | Description |
+|----------|-------------|
+| [LinkedIn Learning Course: Learning Terraform](https://www.linkedin.com/learning/learning-terraform-15575129/learn-terraform-for-your-cloud-infrastructure) | Comprehensive LinkedIn Learning course covering Terraform fundamentals |
+| [About protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) | Official GitHub documentation explaining branch protection rules and availability |
+| [Adding a job summary](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#adding-a-job-summary) | GitHub Actions documentation for creating job summaries |
+| [Supercharging GitHub Actions with Job Summaries](https://github.blog/news-insights/product-news/supercharging-github-actions-with-job-summaries/) | GitHub blog post introducing job summaries feature |
+| [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) | Official specification for GitHub Flavored Markdown |
 
 > [!IMPORTANT]
-> Protected branches are available in **public repositories** with **GitHub Free** and GitHub Free for organizations. Protected branches are also available in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see GitHub’s plans.
-
-- [Adding a job summary](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#adding-a-job-summary)
-- [Supercharging GitHub Actions with Job Summaries](https://github.blog/news-insights/product-news/supercharging-github-actions-with-job-summaries/)
-- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
-
-Below is a **learner-ready lab document** derived directly from your script.
-All choreography notes and editor notes have been removed, and the flow is structured so learners can follow it independently while still matching what you demonstrate on screen.
-
-I’ve kept the tone instructional, concise, and consistent with your other labs.
-
----
+> Protected branches are available in **public repositories** with **GitHub Free** and GitHub Free for organizations. Protected branches are also available in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see GitHub's plans.
 
 ## Lab: Using Terraform Plans and Step Summaries in GitHub Actions
 

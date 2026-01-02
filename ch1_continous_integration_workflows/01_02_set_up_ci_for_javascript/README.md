@@ -20,11 +20,13 @@ In this lesson, you will:
 
 ## References
 
-- [Node.js Supported Versions](https://github.com/nodejs/Release)
-- [actions/setup-node on GitHub Marketplace](https://github.com/marketplace/actions/setup-node-js-environment)
-- [actions/checkout on GitHub Marketplace](https://github.com/marketplace/actions/checkout)
-- [Documentation for the Node.js project used for this lesson](./JS_PROJECT_DETAILS.md)
-- [The updated workflow for this lesson](./js-ci-workflow.yml)
+| Reference | Description |
+|----------|-------------|
+| [Node.js Supported Versions](https://github.com/nodejs/Release) | Official Node.js release schedule and supported versions |
+| [actions/setup-node on GitHub Marketplace](https://github.com/marketplace/actions/setup-node-js-environment) | GitHub Action for setting up Node.js environments |
+| [actions/checkout on GitHub Marketplace](https://github.com/marketplace/actions/checkout) | GitHub Action for checking out repository code |
+| [Documentation for the Node.js project used for this lesson](./JS_PROJECT_DETAILS.md) | Documentation for the JavaScript project used in this lesson |
+| [The updated workflow for this lesson](./js-ci-workflow.yml) | The complete workflow file for this lesson |
 
 ## Lab: Create and Update a Node.js CI Workflow
 

@@ -26,8 +26,10 @@ The following matrix outlines how these two types of visibility interact across 
 
 ## References
 
-- [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
-- [Hugo Project Details](./HUGO_PROJECT_DETAILS.md)
+| Reference | Description |
+|----------|-------------|
+| [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) | Official GitHub documentation for creating and configuring GitHub Pages sites |
+| [Hugo Project Details](./HUGO_PROJECT_DETAILS.md) | Documentation for the Hugo project used in this lesson |
 
 ## Lab: Deploy a Hugo Static Site to GitHub Pages
 

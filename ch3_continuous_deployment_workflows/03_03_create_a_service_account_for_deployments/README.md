@@ -20,8 +20,10 @@ AWS offers a free tier that allows you to deploy applications at no cost for a l
 
 ## References
 
-- [Free Cloud Computing Services - AWS Free Tier](https://aws.amazon.com/free/)
-- [OpenID Connect (OIDC)](https://docs.github.com/en/actions/concepts/security/openid-connect)
+| Reference | Description |
+|----------|-------------|
+| [Free Cloud Computing Services - AWS Free Tier](https://aws.amazon.com/free/) | AWS Free Tier information for cloud computing services |
+| [OpenID Connect (OIDC)](https://docs.github.com/en/actions/concepts/security/openid-connect) | GitHub Actions documentation for using OpenID Connect for secure authentication |
 
 ## Lab: Provision a Service Account and Deployment Targets; Configure GitHub Actions for AWS Deployments
 
