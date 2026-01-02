@@ -67,5 +67,5 @@ You can also [follow this link to view the workflow file](./github-actions-workf
 
 <!-- FooterStart -->
 ---
-[← 00_01 Extra Content 02: Using Exercise Files From the Course](../00_01_xtra_02_using_exercise_files/README.md) | [01_01 Leverage Starter Workflows →](../../ch1_continous_integration_workflows/01_01_leverage_starter_workflows_to_build_your_first_cicd_pipeline/README.md)
+[← 00_01 Extra Content 02: Using Exercise Files From the Course](../00_01_xtra_02_using_exercise_files/README.md) | [01_01 Leverage Starter Workflows →](../../ch1_continous_integration_workflows/01_01_leverage_starter_workflows/README.md)
 <!-- FooterEnd -->
