@@ -18,13 +18,13 @@ GitHub Actions provides **Step summaries** to surface meaningful workflow output
 
 ## Writing to the Step Summary
 
-**Bash / Linux runners**
+### Bash / Linux runners
 
 ```bash
 echo "### Summary Title" >> $GITHUB_STEP_SUMMARY
 ```
 
-**PowerShell runners**
+### PowerShell runners
 
 ```powershell
 "### Summary Title" >> $env:GITHUB_STEP_SUMMARY
