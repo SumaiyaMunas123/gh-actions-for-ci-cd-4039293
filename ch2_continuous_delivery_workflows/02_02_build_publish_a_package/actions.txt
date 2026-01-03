@@ -1,0 +1,3 @@
+Updated actions/checkout: v6 -> v6.0.1
+Updated actions/setup-java: v5 -> v4.8.0
+

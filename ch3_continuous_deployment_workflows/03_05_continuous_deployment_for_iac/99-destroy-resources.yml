@@ -17,16 +17,16 @@ jobs:
     steps:
       # Use a role for OIDC authentication
       - name: Configure AWS Credentials (OIDC)
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5.1.1
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6.0.1
 
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v2
+        uses: hashicorp/setup-terraform@v3.1.2
         with:
           terraform_version: 1.14.3
 
@@ -69,7 +69,7 @@ jobs:
       - name: Update PR comments
         if: github.event_name == 'pull_request'
         id: comment
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v5.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.number }}
@@ -85,16 +85,16 @@ jobs:
     steps:
       # Use a role for OIDC authentication
       - name: Configure AWS Credentials (OIDC)
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5.1.1
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6.0.1
 
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v2
+        uses: hashicorp/setup-terraform@v3.1.2
         with:
           terraform_version: 1.14.3
 

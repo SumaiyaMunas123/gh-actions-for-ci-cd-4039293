@@ -29,10 +29,10 @@ jobs:
     needs: Integrate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.0
+      - uses: actions/checkout@v6.0.1
 
       - name: Set up Python environment
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6.1.0
         with:
           python-version: "3.11"
           cache: "pip"
@@ -45,7 +45,7 @@ jobs:
         run: make build
 
       - name: Archive lambda.zip artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: lambda-artifact
           path: ./lambda.zip
@@ -62,10 +62,10 @@ jobs:
     needs: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.0
+      - uses: actions/checkout@v6.0.1
 
       - name: Set up Python environment
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6.1.0
         with:
           python-version: "3.11"
           cache: "pip"
@@ -75,13 +75,13 @@ jobs:
 
       # Use a role for OIDC authentication vs access keys
       - name: Configure AWS Credentials (OIDC)
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5.1.1
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Retrieve lambda.zip
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7.0.0
         with:
           name: lambda-artifact
 
@@ -108,10 +108,10 @@ jobs:
       url: ${{ vars.URL }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.0
+      - uses: actions/checkout@v6.0.1
 
       - name: Set up Python environment with caching enabled for pip dependencies
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6.1.0
         with:
           python-version: "3.11"
           cache: "pip"
@@ -120,13 +120,13 @@ jobs:
         run: make requirements
 
       - name: Configure AWS Credentials (OIDC)
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5.1.1
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Retrieve lambda.zip
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7.0.0
         with:
           name: lambda-artifact
 

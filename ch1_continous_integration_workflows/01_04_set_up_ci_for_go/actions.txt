@@ -1,0 +1,3 @@
+Updated actions/checkout: v6 -> v6.0.1
+Updated actions/setup-go: v6 -> v4.3.0
+

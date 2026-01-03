@@ -1,0 +1,3 @@
+Updated actions/checkout: v4 -> v6.0.1
+Updated actions/setup-node: v4 -> v6.1.0
+

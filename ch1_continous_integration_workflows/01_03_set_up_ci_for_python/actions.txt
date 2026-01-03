@@ -1,0 +1,4 @@
+Updated actions/checkout: v4 -> v6.0.1
+Updated actions/setup-python: v3 -> v6.1.0
+Updated mikepenz/action-junit-report: v3 -> v6.1.0
+

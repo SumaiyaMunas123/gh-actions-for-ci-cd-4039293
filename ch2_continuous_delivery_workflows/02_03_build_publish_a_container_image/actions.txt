@@ -1,0 +1,5 @@
+Updated actions/checkout: v6 -> v6.0.1
+Updated actions/setup-python: v3 -> v6.1.0
+Updated docker/build-push-action: v6 -> v6.18.0
+Updated docker/metadata-action: v5 -> v5.10.0
+Updated mikepenz/action-junit-report: v3 -> v6.1.0

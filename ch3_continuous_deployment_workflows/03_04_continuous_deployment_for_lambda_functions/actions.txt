@@ -1,0 +1,6 @@
+Updated actions/checkout: v4.1.0 -> v6.0.1
+Updated actions/download-artifact: v4 -> v7.0.0
+Updated actions/setup-python: v4 -> v6.1.0
+Updated actions/upload-artifact: v4 -> v6.0.0
+Updated aws-actions/configure-aws-credentials: v4 -> v5.1.1
+Updated mikepenz/action-junit-report: v3 -> v6.1.0
