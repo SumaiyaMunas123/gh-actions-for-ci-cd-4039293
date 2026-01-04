@@ -1,5 +1,6 @@
 README_FILES := $(shell find . -type f -not -path './.git/*' -name 'README.md' -o -name 'WINDOWS.md' -o -name 'MAC_LINUX_DOCKER.md')
 DIRECTORIES := $(shell find $(PWD) -type f -name 'README.md' -exec dirname {} \;)
+WORKFLOWS := $(shell find . -type f -name "*.yml" ! -name "*-cloudformation-template.yml")
 
 hello:
 	@echo "This makefile has the following tasks:"
@@ -45,6 +46,13 @@ $(DIRECTORIES):
 	@echo "Processing directory: $@"
 	@cd $@ && pandoc README.md -o $(notdir $@)-README.pdf
 	@cd $(PROJECT_HOME)
+
+check-workflows: $(WORKFLOWS)
+
+$(WORKFLOWS):
+	docker run --env GITHUB_TOKEN=$(GITHUB_TOKEN) \
+		--volume $(PWD):/work \
+		ghcr.io/managedkaos/get-action-version-number:main --update-in-place --workflow $@
 
 wordcount:
 	@find . -type f -name README.md -exec wc -l {} \; | sort -nr
@@ -102,4 +110,4 @@ update-titles:
 		fi; \
 	done
 
-.PHONY: hello lint spellcheck toc footer pdf countlines chapterlist overlay clean nuke update-titles $(DIRECTORIES)
+.PHONY: hello lint spellcheck toc footer pdf countlines chapterlist overlay clean nuke update-titles check-work $(DIRECTORIES) $(WORKFLOWS)
