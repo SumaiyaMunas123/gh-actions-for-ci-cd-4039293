@@ -30,5 +30,5 @@
 
 <!-- FooterStart -->
 ---
-[← 01_06 Solution: Build a CI Workflow for a Python Project](../../ch1_continous_integration_workflows/01_06_solution_build_a_ci_workflow_for_a_python_project/README.md) | [02_02 Build and Publish a Software Package →](../02_02_build_publish_a_package/README.md)
+[← 01_06 Solution: Build a CI Workflow for a Python Project](../../ch1_continous_integration_workflows/01_06_solution_ci_workflow/README.md) | [02_02 Build and Publish a Software Package →](../02_02_build_publish_a_package/README.md)
 <!-- FooterEnd -->
