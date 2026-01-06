@@ -2,6 +2,7 @@
 00_01 Extra Content 01: Create a GitHub Organization for Your Course Repositories
 00_01 Extra Content 02: Using Exercise Files From the Course
 00_02 Explore the Capabilities of Github actions
+00_03 Software Versions
 01_01 Leverage Starter Workflows
 01_02 Set Up CI for Javascript
 01_03 Set Up CI for Python
