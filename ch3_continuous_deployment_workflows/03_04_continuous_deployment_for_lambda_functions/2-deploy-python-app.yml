@@ -59,7 +59,7 @@ jobs:
     environment:
       name: Staging
       url: ${{ vars.URL }}
-    needs: Build
+    needs: Integrate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6.0.1
