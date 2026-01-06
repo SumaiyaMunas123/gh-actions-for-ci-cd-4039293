@@ -240,5 +240,5 @@ If you wanted to use a workflow from another repo, we’d need to add the repo n
 
 <!-- FooterStart -->
 ---
-[← 02_02 Build and Publish a Software Package](../02_02_build_publish_a_package/README.md) | [02_04 Challenge: Develop a Container Image Workflow →](../02_04_challenge_develop_a_container_image_workflow/README.md)
+[← 02_02 Build and Publish a Software Package](../02_02_build_publish_a_package/README.md) | [02_04 Challenge: Develop a Container Image Workflow →](../02_04_challenge_container_workflow/README.md)
 <!-- FooterEnd -->
