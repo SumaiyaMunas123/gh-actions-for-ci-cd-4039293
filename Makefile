@@ -47,12 +47,43 @@ $(DIRECTORIES):
 	@cd $@ && pandoc README.md -o $(notdir $@)-README.pdf
 	@cd $(PROJECT_HOME)
 
-check-workflows: $(WORKFLOWS)
+update-workflows: $(WORKFLOWS)
 
 $(WORKFLOWS):
+	@if [ -z "$$GITHUB_TOKEN" ]; then \
+		echo "Error: GITHUB_TOKEN is not set."; \
+		exit 1; \
+	fi
 	docker run --env GITHUB_TOKEN=$(GITHUB_TOKEN) \
 		--volume $(PWD):/work \
 		ghcr.io/managedkaos/get-action-version-number:main --update-in-place --workflow $@
+
+# Step 1: Generate the individual actions.txt files
+get-action-versions:
+	@if [ -z "$$GITHUB_TOKEN" ]; then \
+		echo "Error: GITHUB_TOKEN is not set."; \
+		exit 1; \
+	fi
+	@find . -type f -name "*.yml" ! -name "*-cloudformation-template.yml" ! -path "./.github*" | \
+	while read -r yml_path; do \
+		dir_name=$$(dirname "$$yml_path"); \
+		echo "Processing $$yml_path..."; \
+		docker run --rm --env GITHUB_TOKEN="$$GITHUB_TOKEN" \
+			--volume "$$PWD:/work" \
+			ghcr.io/managedkaos/get-action-version-number:main \
+			--workflow "$$yml_path" | awk '{print $$1}' | sort | uniq > "$$dir_name/actions.txt"; \
+	done
+
+# Step 2: Collect data into the Markdown summary and cleanup
+summarize-action-versions:
+	@echo "# Action Version Summary" > ACTION_VERSION_SUMMARY.md
+	@echo "" >> ACTION_VERSION_SUMMARY.md
+	@echo "## Action Versions" >> ACTION_VERSION_SUMMARY.md
+	@echo "" >> ACTION_VERSION_SUMMARY.md
+	@find . -type f -name actions.txt -exec cat {} \; \
+		| sort | uniq | sed -e 's/^/- /' >> ACTION_VERSION_SUMMARY.md
+	@echo "Summary created: ACTION_VERSION_SUMMARY.md"
+	@cat ACTION_VERSION_SUMMARY.md
 
 wordcount:
 	@find . -type f -name README.md -exec wc -l {} \; | sort -nr
@@ -77,16 +108,17 @@ overlay:
 	@find . -type f -name README.md | sort | sed 's/^\.\///' | sed 's/\// > /g' | sed 's/ > README.md//'
 
 clean:
-	find . -type f -name \*.pdf -not \( -path '*/github-actions-cheat-sheet.pdf' \) -exec rm -vf {} \;
-	find . -type f -name \*.bak -exec rm -vf {} \;
-	find . -type f -name \*.new -exec rm -vf {} \;
+	find . -type f -name \*.bak -delete
+	find . -type f -name \*.new -delete
+	find . -type f -name actions.txt -delete
 	find . -type d -name .pytest_cache -exec trash {} \;
+	find . -type f -name \*.pdf -not \( -path '*/github-actions-cheat-sheet.pdf' \) -delete
 	$(MAKE) clean -C ./ch1_continous_integration_workflows/01_02_set_up_ci_for_javascript/
 	$(MAKE) clean -C./ch1_continous_integration_workflows/01_03_set_up_ci_for_python/
 	$(MAKE) clean -C./ch1_continous_integration_workflows/01_04_set_up_ci_for_go/
 
 nuke: clean
-	find /tmp/ -type f -name \*.pdf -exec rm -vf {} \;
+	find /tmp/ -type f -name \*.pdf -delete
 
 update-titles:
 	@if [ ! -f CHAPTER_LIST.txt ] || [ ! -f CHAPTER_TITLES.txt ]; then \
@@ -110,4 +142,4 @@ update-titles:
 		fi; \
 	done
 
-.PHONY: hello lint spellcheck toc footer pdf countlines chapterlist overlay clean nuke update-titles check-work $(DIRECTORIES) $(WORKFLOWS)
+.PHONY: hello lint spellcheck toc footer pdf countlines chapterlist overlay clean nuke update-titles check-work $(DIRECTORIES) $(WORKFLOWS) get-action-versions summarize-action-versions
