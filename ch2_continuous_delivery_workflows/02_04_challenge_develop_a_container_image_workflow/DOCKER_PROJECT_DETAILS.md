@@ -28,6 +28,7 @@ The application provides two main endpoints:
 - **IP Address Endpoint** (`/{ip_address}`): Accepts an IP address, validates its format, and returns a random city location
 
 The API runs on port 3000 and includes FastAPI's automatic interactive documentation:
+
 - **Developer Panel**: `/docs` - Swagger UI for interactive API exploration
 - **Documentation**: `/redoc` - ReDoc documentation interface
 
