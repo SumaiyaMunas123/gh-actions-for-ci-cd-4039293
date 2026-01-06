@@ -405,3 +405,4 @@ replay_pid*
 *.bak
 .terraform
 .terraform.lock.hcl
+actions.txt
