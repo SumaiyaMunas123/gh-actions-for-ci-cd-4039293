@@ -19,6 +19,6 @@
 03_03 Create a Service account for Deployments
 03_04 Continuous Deployment for Lambda Functions
 03_05 Continuous Deployment for Infrastructure as Code
-03_06 Challenge: Build a Full CI/CD Pipeline with Environment Controls and Summaries
-03_07 Solution: Build a Full CI/CD Pipeline with Environment Controls and Summaries
+03_06 Challenge: Build a Full CI/CD Pipeline
+03_07 Solution: Build a Full CI/CD Pipeline
 04_01 Next Steps
