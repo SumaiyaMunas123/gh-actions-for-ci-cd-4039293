@@ -15,6 +15,8 @@ To complete this challenge, you will:
 - Observe, diagnose, and fix a failing workflow
 - Trigger and verify a successful CI run
 
+This challenge should take 15 to 20 minutes to complete.
+
 ## Prerequisites
 
 Before you begin, make sure you have:
@@ -125,8 +127,8 @@ At this stage, the workflow is expected to **fail**.
 ## Challenge Completion
 
 1. Review the tasks in this challenge.
-2. Consider how the steps mirror a real-world CI workflow setup
-3. Consider how GitHub Actions supports rapid feedback during software development.
+2. Consider how the steps mirror a real-world continuous integration workflow.
+3. Consider how GitHub Actions can support rapid feedback during software development.
 
 ### Optional Reflection
 

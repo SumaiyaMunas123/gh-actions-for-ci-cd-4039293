@@ -15,6 +15,8 @@ To complete this challenge, you will:
 - Observe, diagnose, and fix a failing workflow
 - Trigger and verify a successful CI run
 
+This challenge should take 15 to 20 minutes to complete.
+
 <!-- FooterStart -->
 ---
 [← 01_04 Set Up CI for Go](../01_04_set_up_ci_for_go/README.md) | [01_06 Solution: Build a CI Workflow for a Python Project →](../01_06_solution_ci_workflow/README.md)
