@@ -406,3 +406,4 @@ replay_pid*
 .terraform
 .terraform.lock.hcl
 actions.txt
+public/
