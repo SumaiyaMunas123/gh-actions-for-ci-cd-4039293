@@ -27,7 +27,7 @@ The steps below walk you through:
 ## Step 2: Identify the lesson files you need
 
 1. Open the extracted exercise files folder.
-2. Locate the directory for the lesson you’re currently working on (for example: `01_04_set_up_ci_for_go`).
+2. Locate the directory for the lesson you’re currently working on (for example: `01_04_ci_for_go`).
 3. Review the contents of that lesson folder.
 
    - Lessons may include **multiple files and directories**
@@ -39,7 +39,7 @@ The steps below walk you through:
 1. In GitHub, select **New repository**.
 2. Enter a **repository name**.
 
-   - Recommended: use the **same name as the exercise file directory** to make it easy to find later (for example: `01_04_set_up_ci_for_go`)
+   - Recommended: use the **same name as the exercise file directory** to make it easy to find later (for example: `01_04_ci_for_go`)
 3. Enter a short **description** (for example: *Exercise files for lesson 01_04*).
 4. Choose **Public** or **Private**, based on your preference.
 5. Select **Add a README file**.
