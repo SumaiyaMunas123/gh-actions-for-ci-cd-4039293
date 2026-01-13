@@ -180,5 +180,5 @@ In the next step, you’ll add the application code to the repository and use Gi
 
 <!-- FooterStart -->
 ---
-[← 03_02 Continuous Deployment for Github Pages](../03_02_continuous_deployment_for_github_pages/README.md) | [03_04 Continuous Deployment for Lambda Functions →](../03_04_continuous_deployment_for_lambda_functions/README.md)
+[← 03_02 Continuous Deployment for Github Pages](../03_02_cd_for_github_pages/README.md) | [03_04 Continuous Deployment for Lambda Functions →](../03_04_cd_for_lambda/README.md)
 <!-- FooterEnd -->

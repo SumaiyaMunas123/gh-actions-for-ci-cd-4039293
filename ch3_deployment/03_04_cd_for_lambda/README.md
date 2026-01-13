@@ -179,5 +179,5 @@ After completing the steps for this lab, you should have in place:
 
 <!-- FooterStart -->
 ---
-[← 03_03 Create a Service account for Deployments](../03_03_create_a_service_account_for_deployments/README.md) | [03_05 Continuous Deployment for Infrastructure as Code →](../03_05_continuous_deployment_for_iac/README.md)
+[← 03_03 Create a Service account for Deployments](../03_03_service_account/README.md) | [03_05 Continuous Deployment for Infrastructure as Code →](../03_05_cd_for_iac/README.md)
 <!-- FooterEnd -->

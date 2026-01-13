@@ -113,9 +113,9 @@ clean:
 	find . -type f -name actions.txt -delete
 	find . -type d -name .pytest_cache -exec trash {} \;
 	find . -type f -name \*.pdf -not \( -path '*/github-actions-cheat-sheet.pdf' \) -delete
-	$(MAKE) clean -C ./ch1_continous_integration_workflows/01_02_set_up_ci_for_javascript/
-	$(MAKE) clean -C./ch1_continous_integration_workflows/01_03_set_up_ci_for_python/
-	$(MAKE) clean -C./ch1_continous_integration_workflows/01_04_set_up_ci_for_go/
+	$(MAKE) clean -C ./ch1_integration/01_02_ci_for_javascript/
+	$(MAKE) clean -C./ch1_integration/01_03_ci_for_python/
+	$(MAKE) clean -C./ch1_integration/01_04_ci_for_go/
 
 nuke: clean
 	find /tmp/ -type f -name \*.pdf -delete

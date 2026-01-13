@@ -22,5 +22,5 @@ This challenge should take **20–30 minutes** to complete.
 
 <!-- FooterStart -->
 ---
-[← 03_05 Continuous Deployment for Infrastructure as Code](../03_05_continuous_deployment_for_iac/README.md) | [03_07 Solution: Build a Full CI/CD Pipeline →](../03_07_solution_cicd_pipeline/README.md)
+[← 03_05 Continuous Deployment for Infrastructure as Code](../03_05_cd_for_iac/README.md) | [03_07 Solution: Build a Full CI/CD Pipeline →](../03_07_solution_cicd_pipeline/README.md)
 <!-- FooterEnd -->

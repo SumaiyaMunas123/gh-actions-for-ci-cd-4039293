@@ -122,5 +122,5 @@ Starter workflows work out of the box—but small changes make them much better.
 
 <!-- FooterStart -->
 ---
-[← 00_03 Software Versions](../../ch0_introduction/00_03_software_versions/README.md) | [01_02 Set Up CI for Javascript →](../01_02_set_up_ci_for_javascript/README.md)
+[← 00_03 Software Versions](../../ch0_introduction/00_03_software_versions/README.md) | [01_02 Set Up CI for Javascript →](../01_02_ci_for_javascript/README.md)
 <!-- FooterEnd -->
