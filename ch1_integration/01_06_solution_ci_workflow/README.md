@@ -55,7 +55,7 @@ Before you begin, make sure you have:
         - `manage.py`
         - `requirements.txt`
 
-    ![Django project file structure after uploading to GitHub.](./images/ch1-django-files.png)
+    ![Django project file structure after uploading to GitHub.](./images/01_06-01-django-files.png)
 
 5. Commit the uploaded files to the `main` branch.
 
@@ -101,7 +101,7 @@ At this stage, the workflow is expected to **fail**.
 
 ### Step 6: Debug the Workflow Failure
 
-1. Open the failed job for one of the Python versions (for example, Python 3.11).
+1. Open the log for the failed job.
 2. Locate the failure in the **Run tests** step.
 3. Identify the error indicating that **`numpy` is not installed**.
 

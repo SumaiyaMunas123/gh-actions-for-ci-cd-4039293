@@ -1,8 +1,6 @@
 # 04_01 Next Steps
 
-From the author, [Michael Jenkins](https://www.linkedin.com/in/michaelpjenkins/):
-
-Thanks for joining me for this course on using **GitHub actions for CICD**.
+Thanks for joining me for this course, **GitHub Actions for CI/CD**.
 
 I hope the tips and techniques that you learned make it even more enjoyable for you to test, build, and deploy all of your projects on GitHub.
 
@@ -10,7 +8,11 @@ If you haven’t already, I encourage you to take a look at my course [Advanced 
 
 You'll learn even more techniques that you can apply to your CI workflows like using service containers, setting up matrix builds, and deploying from self hosted runners.
 
-Please share your experience on LinkedIn.  I'm looking forward to hearing about all the exciting ways you're using GitHub Actions for CI CD.
+As you wrap up your time with this course, please share your experience on LinkedIn!  I'm looking forward to hearing about all the exciting ways you're using GitHub Actions for CI/CD.
+
+Continuously,
+
+[Michael Jenkins](https://www.linkedin.com/in/michaelpjenkins/):
 
 <!-- FooterStart -->
 ---
